@@ -14,32 +14,22 @@
     <div class="window">
         <header class="toolbar toolbar-header">
             <div class="toolbar-actions">
-                <div class="btn-group">
-                    <button class="btn btn-default">
-                        <span class="icon icon-home"></span>
-                    </button>
-                    <button class="btn btn-default">
-                        <span class="icon icon-folder"></span>
-                    </button>
-                    <button class="btn btn-default active">
-                        <span class="icon icon-cloud"></span>
-                    </button>
-                    <button class="btn btn-default">
-                        <span class="icon icon-popup"></span>
-                    </button>
-                    <button class="btn btn-default">
-                        <span class="icon icon-shuffle"></span>
-                    </button>
-                </div>
+                <select id="mode" class="btn btn-positive btn-dropdown">
+                    <option value="0">Negocio</option>
+                    <option value="1">Base de Datos</option>
+                </select>
           
-                <button class="btn btn-default">
-                    <span class="icon icon-home icon-text"></span>
-                    Filters
+                <select id="agency" class="btn btn-dropdown pull-right">
+                    <option value="0">RIF: </option>
+                    <option value="1">RIF: 0912</option>
+                    <option value="2">RIF: 1234</option>
+                </select>
+
+                 <button id="agency-name" class="btn btn-negative pull-right">
+                    <span class="icon icon-menu icon-text"></span>
+                    Seleccionado: ...      
                 </button>
-          
-                 <button class="btn btn-default btn-dropdown pull-right">
-                    <span class="icon icon-megaphone"></span>
-                </button>
+
             </div>
         </header>
 
