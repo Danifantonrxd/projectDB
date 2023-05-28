@@ -1,0 +1,19 @@
+{
+  "name": "proyectobd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "electron src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^24.4.0"
+  },
+  "dependencies": {
+    "pg": "^8.11.0"
+  }
+}
