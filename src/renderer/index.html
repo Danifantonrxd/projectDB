@@ -14,18 +14,19 @@
     <div class="window">
         <header class="toolbar toolbar-header">
             <div class="toolbar-actions">
-                <select id="mode" class="btn btn-positive btn-dropdown">
+                <select id="mode" class="btn btn-large btn-positive btn-dropdown">
                     <option value="0">Negocio</option>
                     <option value="1">Base de Datos</option>
+                    <option value="2">Estadisticas</option>
                 </select>
           
-                <select id="agency" class="btn btn-dropdown pull-right">
+                <select id="agency" class="btn btn-large btn-dropdown pull-right">
                     <option value="0">RIF: </option>
                     <option value="1">RIF: 0912</option>
                     <option value="2">RIF: 1234</option>
                 </select>
 
-                 <button id="agency-name" class="btn btn-negative pull-right">
+                 <button id="agency-name" class="btn btn-large btn-negative pull-right">
                     <span class="icon icon-menu icon-text"></span>
                     Seleccionado: ...      
                 </button>
@@ -35,9 +36,171 @@
 
         <div class="window-content">
             <div class="pane-group">
-                <div class="pane-sm sidebar inactive">Base de datos</div>
-                <div class="pane-sm sidebar">Negocio</div>
-                <div class="pane inactive">...</div>
+                <div class="pane-sm sidebar">
+                    <ul id="business" class="list-group">
+                        <li id="li-reserve" class="business list-group-item selected">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Messi.png" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Reservar</strong>
+                                <p>Reservar un servicio</p>
+                            </div>
+                        </li>
+                        <li id="li-order" class="business list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Messi.png" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Ordenes</strong>
+                                <p>Orden de Servicio</p>
+                            </div>
+                        </li>
+                        <li id="li-check" class="business list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Messi.png" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Facturación</strong>
+                                <p>Facturar un Servicio</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul id="database" class="list-group inactive">
+                        <li class="database list-group-item selected">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Concesionarios</strong>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class="database list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Servicios</strong>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class="database list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Trabajadores</strong>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class="database list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Ordenes</strong>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class="database list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Reservas</strong>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class="database list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Modelos</strong>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class="database list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Vehiculos</strong>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class="database list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Clientes</strong>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class="database list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Productos</strong>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class="database list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Facturas</strong>
+                                <p></p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul id="stats" class="list-group inactive">
+                        <li class="stats list-group-item selected">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Historia Reiss.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Modelos de Vehiculos</strong>
+                                <p>Los que mas se atendieron</p>
+                            </div>
+                        </li>
+                        <li class="stats list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Historia Reiss.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Pesonal Mecanico</strong>
+                                <p>Servicios realizados</p>
+                            </div>
+                        </li>
+                        <li class="stats list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Historia Reiss.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Clientes Frecuentes</strong>
+                                <p>Lista ordenada</p>
+                            </div>
+                        </li>
+                        <li class="stats list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Historia Reiss.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Productos</strong>
+                                <p>Estadisticas Generales</p>
+                            </div>
+                        </li>
+                        <li class="stats list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Historia Reiss.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Servicios</strong>
+                                <p>Los mayor solicitados</p>
+                            </div>
+                        </li>
+                        <li class="stats list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Historia Reiss.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Servicios por Vehiculos</strong>
+                                <p>Historico de uso</p>
+                            </div>
+                        </li>
+                        <li class="stats list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Historia Reiss.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Agencias</strong>
+                                <p>Las que mas facturan</p>
+                            </div>
+                        </li>
+                        <li class="stats list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Historia Reiss.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Reservas no usadas</strong>
+                                <p>Lista de clientes</p>
+                            </div>
+                        </li>
+                        <li class="stats list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Historia Reiss.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Programas de mantenimiento?</strong>
+                                <p>revisar</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="pane">Hola Mundo</div>
             </div>
         </div>

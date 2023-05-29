@@ -365,7 +365,8 @@ h6 {
 .btn-primary,
 .btn-positive,
 .btn-negative,
-.btn-warning {
+.btn-warning,
+.btn-stats {
   color: #fff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
@@ -428,6 +429,21 @@ h6 {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdbc40), color-stop(100%, #ee9d02));
   background-image: -webkit-linear-gradient(top, #fdbc40 0%, #ee9d02 100%);
   background-image: linear-gradient(to bottom, #fdbc40 0%, #ee9d02 100%);
+}
+
+.btn-stats {
+  border-color: #cb126e;
+  border-bottom-color: #a71772;
+  background-color: #a0005d;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #1a82fb));
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #00000071 100%);
+  background-image: linear-gradient(to bottom, #df0094 0%, #cf0075 100%);
+}
+.btn-stats:active {
+  background-color: #d10061;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #0469de));
+  background-image: -webkit-linear-gradient(top, #dedede 0%, #0000008e 100%);
+  background-image: linear-gradient(to bottom, #af1d69 0%, #890862 100%);
 }
 
 .btn .icon {
