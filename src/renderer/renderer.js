@@ -43,6 +43,7 @@ function changeMode(){
         selectMode.classList.remove("btn-stats");
         selectMode.classList.add("btn-positive");
 
+        alert("Negocio");
         console.log("Negocio");
     }
     else if (mode == 1) {
@@ -84,20 +85,24 @@ function changeAgency(){
 function changeBusinessOptions(option, node){
     const li = document.querySelector("#business li.selected");
     li.classList.remove("selected");
+    node.classList.add("selected");
     switch(option){
         case 0: {
             console.log("Reserva");
-            node.classList.add("selected");
+
+            businessReserve();
         }break;
 
         case 1: {
             console.log("Orden");
-            node.classList.add("selected");
+
+            businessOrder();
         }break;
 
         case 2: {
             console.log("Factura");
-            node.classList.add("selected");
+
+            businessCheck();
         }break;
     }
 }
@@ -208,3 +213,4 @@ function changeStatOptions(option, node){
         }break;
     }    
 }
+

@@ -338,7 +338,7 @@ h6 {
 }
 
 .btn-large {
-  padding: 6px 12px;
+  padding: 8px 12px;
 }
 
 .btn-form {
@@ -426,7 +426,7 @@ h6 {
 }
 .btn-warning:active {
   background-color: #fdbc40;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdbc40), color-stop(100%, #ee9d02));
+  background-image: -webkit-gradient(businesslinear, left top, left bottom, color-stop(0%, #fdbc40), color-stop(100%, #ee9d02));
   background-image: -webkit-linear-gradient(top, #fdbc40 0%, #ee9d02 100%);
   background-image: linear-gradient(to bottom, #fdbc40 0%, #ee9d02 100%);
 }
@@ -582,7 +582,8 @@ h6 {
 
 label {
   display: inline-block;
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: bold;
   margin-bottom: 5px;
   white-space: nowrap;
   overflow: hidden;
@@ -604,7 +605,7 @@ input[type="checkbox"] {
   width: 100%;
   min-height: 25px;
   padding: 5px 10px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.6;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -621,6 +622,7 @@ textarea {
 }
 
 .form-group {
+  margin-top: 40px;
   margin-bottom: 10px;
 }
 
@@ -674,7 +676,7 @@ textarea {
 }
 
 .pane-sm {
-  max-width: 500px;
+  max-width: 250px;
   min-width: 200px;
 }
 
