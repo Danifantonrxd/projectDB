@@ -112,6 +112,7 @@ legend {
 }
 
 table {
+  color: #333;
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -432,18 +433,18 @@ h6 {
 }
 
 .btn-stats {
-  border-color: #cb126e;
+  border-color: #ac0056;
   border-bottom-color: #a71772;
   background-color: #a0005d;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #1a82fb));
   background-image: -webkit-linear-gradient(top, #ffffff 0%, #00000071 100%);
-  background-image: linear-gradient(to bottom, #df0094 0%, #cf0075 100%);
+  background-image: linear-gradient(to bottom, #df0094 0%, #b30065 100%);
 }
 .btn-stats:active {
   background-color: #d10061;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #0469de));
   background-image: -webkit-linear-gradient(top, #dedede 0%, #0000008e 100%);
-  background-image: linear-gradient(to bottom, #af1d69 0%, #890862 100%);
+  background-image: linear-gradient(to bottom, #af1d69 0%, #b10053 100%);
 }
 
 .btn .icon {
@@ -611,6 +612,8 @@ input[type="checkbox"] {
   border: 1px solid #ddd;
   border-radius: 4px;
   outline: none;
+  color: #333;
+  resize: none;
 }
 .form-control:focus {
   border-color: #6db3fd;
@@ -2239,6 +2242,7 @@ table {
 }
 
 thead {
+  font-size: 13.5px;
   background-color: #f5f5f4;
 }
 

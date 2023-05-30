@@ -29,6 +29,10 @@
     align-items: center;
 }
 
+/*----------------------------------------------------*/
+/* Forms                                              */
+/*----------------------------------------------------*/
+
 .form-grid {
     display: grid;
     align-items: end;
@@ -47,13 +51,24 @@
     color: #3f3f3f;
 }
 
+.form-info-extended {
+    margin-top: 16px;
+    height: 120px;
+}
+
 .form-sm {
     background-color: #2f2f2f;
-    width: 500px;
+    min-width: 500px;
+    max-width: fit-content;
+    
     color: white;
     padding: 0 50px 50px;
     border-radius: 20px;
 }
+
+/*----------------------------------------------------*/
+/* Modifiers                                             */
+/*----------------------------------------------------*/
 
 .add-select {
     font-size: 15px;
@@ -83,6 +98,28 @@
 
 .not-found{
     border: 2px solid #FB332D;
+}
+
+.btn-send {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.group-info {
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.table-info {
+    margin-top: 20px;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 /* Business Reserve */
