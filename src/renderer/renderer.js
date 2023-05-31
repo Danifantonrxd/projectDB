@@ -34,6 +34,7 @@ addOptionEvents("stats");
 
 function changeMode(){
     const mode = selectMode.selectedIndex;
+    
     if(mode == 0){
         databaseOptions.classList.add("inactive");
         statsOptions.classList.add("inactive");
@@ -45,6 +46,11 @@ function changeMode(){
 
         alert("Negocio");
         console.log("Negocio");
+
+        const options = document.getElementsByClassName("business");
+        const node = options[0];
+
+        changeBusinessOptions(0, node);
     }
     else if (mode == 1) {
         statsOptions.classList.add("inactive");
@@ -55,6 +61,11 @@ function changeMode(){
         selectMode.classList.remove("btn-stats");
         selectMode.classList.add("btn-primary");
         console.log("BD");
+
+        const options = document.getElementsByClassName("database");
+        const node = options[0];
+
+        changeDBOptions(0, node);
     }
     else if (mode == 2) {
         databaseOptions.classList.add("inactive");
@@ -65,6 +76,11 @@ function changeMode(){
         selectMode.classList.remove("btn-primary");
         selectMode.classList.add("btn-stats");
         console.log("Stats");
+
+        const options = document.getElementsByClassName("stats");
+        const node = options[0];
+
+        changeStatOptions(0, node);
     }
 }
 
@@ -110,55 +126,109 @@ function changeBusinessOptions(option, node){
 function changeDBOptions(option, node){
     const li = document.querySelector("#database li.selected");
     li.classList.remove("selected");
+
+    node.classList.add("selected");
     switch(option){
         case 0: {
             console.log("Concesionarios");
-            node.classList.add("selected");
+
+            databaseAgencys();
         }break;
 
         case 1: {
-            console.log("Servicios");
-            node.classList.add("selected");
+            console.log("Encargados");
+
+            databaseChiefs();
         }break;
 
         case 2: {
-            console.log("Trabajadores");
-            node.classList.add("selected");
+            console.log("Servicios");
+
+            databaseServices();
         }break;
 
         case 3: {
-            console.log("Ordenes");
-            node.classList.add("selected");
+            console.log("Trabajadores");
+
+            databaseWorkers();
         }break;
 
         case 4: {
-            console.log("Reservas");
-            node.classList.add("selected");
+            console.log("Cargos");
+
+            databaseOccupations();
         }break;
 
         case 5: {
-            console.log("Modelos");
-            node.classList.add("selected");
+            console.log("Especializaciones");
+
+            databaseSpecializations();
         }break;
 
         case 6: {
-            console.log("Vehiculos");
-            node.classList.add("selected");
+            console.log("Modelos");
+
+            databaseModels();
         }break;
 
         case 7: {
-            console.log("Clientes");
-            node.classList.add("selected");
+            console.log("Mantenimientos recomendados");
+
+            databaseRecomendedMaintenances();
         }break;
 
         case 8: {
-            console.log("Productos");
-            node.classList.add("selected");
+            console.log("Vehiculos");
+
+            databaseVehicules();
         }break;
 
         case 9: {
+            console.log("Clientes");
+
+            databaseClients();
+        }break;
+
+        case 10: {
+            console.log("Productos");
+
+            databaseProducts();
+        }break;
+
+        case 11: {
+            console.log("Bancos");
+
+            databaseBanks();
+        }break;
+
+        case 12: {
+            console.log("Ciudades");
+
+            databaseCities();
+        }break;
+
+        case 13: {
+            console.log("Estados");
+
+            databaseStates();
+        }break;
+
+        case 14: {
+            console.log("Ordenes");
+
+            databaseOrders();
+        }break;
+
+        case 15: {
+            console.log("Reservas");
+
+            databaseReserves();
+        }break;
+
+        case 16: {
             console.log("Facturas");
-            node.classList.add("selected");
+
+            databaseChecks();
         }break;
     }
 }
@@ -166,50 +236,60 @@ function changeDBOptions(option, node){
 function changeStatOptions(option, node){
     const li = document.querySelector("#stats li.selected");
     li.classList.remove("selected");
+    node.classList.add("selected");
     switch(option){
         case 0: {
             console.log("Modelos de Vehiculos");
-            node.classList.add("selected");
+
+            statModels();
         }break;
 
         case 1: {
             console.log("Personal Mecanico");
-            node.classList.add("selected");
+
+            statWorkers();
         }break;
 
         case 2: {
             console.log("Clientes Frecuentes");
-            node.classList.add("selected");
+
+            statFrecuentClients();
         }break;
 
         case 3: {
             console.log("Productos");
-            node.classList.add("selected");
+            
+            statProducts();
         }break;
 
         case 4: {
             console.log("Servicios");
-            node.classList.add("selected");
+            
+            statServices();
         }break;
 
         case 5: {
             console.log("Servicios por Vehiculos");
-            node.classList.add("selected");
+
+            statServicePerVehicules();
         }break;
 
         case 6: {
             console.log("Agencias");
-            node.classList.add("selected");
+            
+            statAgencys();
         }break;
 
         case 7: {
             console.log("Reservas no usadas");
-            node.classList.add("selected");
+
+            statUnusedReserves();
         }break;
 
         case 8: {
             console.log("Programas de Mantenimiento?");
-            node.classList.add("selected");
+
+            statMaintenancePrograms();
         }break;
     }    
 }

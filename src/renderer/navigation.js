@@ -1,5 +1,9 @@
 const mainPane = document.getElementById("main-pane");
 
+/*----------------------------------------------------*/
+/* Business                                           */
+/*----------------------------------------------------*/
+
 function businessReserve(){
     const html = `
     <form class="form-sm">
@@ -307,6 +311,170 @@ function businessCheck(){
     </div>
 </form>
     `;
+
+    mainPane.innerHTML = html;
+}
+
+/*----------------------------------------------------*/
+/* Database                                           */
+/*----------------------------------------------------*/
+
+function databaseAgencys(){
+    const html = `Concesionarios`;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseChiefs(){
+    const html = `Encargados`;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseServices(){
+    const html = `Servicios`;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseWorkers(){
+    const html = `Trabajadores`;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseOccupations(){
+    const html = `Cargos`;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseSpecializations(){
+    const html = `Especializaciones`;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseModels(){
+    const html = `Modelos`;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseRecomendedMaintenances(){
+    const html = `Mantenimientos recomendados`;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseVehicules(){
+    const html = `Vehiculos`;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseClients(){
+    const html = `Clientes`;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseProducts(){
+    const html = `Productos`;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseBanks(){
+    const html = `Bancos`;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseCities(){
+    const html = `Ciudades`;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseStates(){
+    const html = `Estados`;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseOrders(){
+    const html = `Ordenes`;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseReserves(){
+    const html = `Reservas`;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseChecks(){
+    const html = `Facturas`;
+
+    mainPane.innerHTML = html;
+}
+
+/*----------------------------------------------------*/
+/* Stats                                              */
+/*----------------------------------------------------*/
+
+function statModels(){
+    const html = `Modelos de Vehiculos que mas se atendieron`;
+
+    mainPane.innerHTML = html;
+}
+
+function statWorkers(){
+    const html = `Personal mecanico que mas servicios realizó`;
+
+    mainPane.innerHTML = html;
+}
+
+function statFrecuentClients(){
+    const html = `Lista ordenada de clientes frecuentes`;
+
+    mainPane.innerHTML = html;
+}
+
+function statProducts(){
+    const html = `Estadisticas de los productos`;
+
+    mainPane.innerHTML = html;
+}
+
+function statServices(){
+    const html = `Los servicios mas solicitados`;
+
+    mainPane.innerHTML = html;
+}
+
+function statServicePerVehicules(){
+    const html = `Historico de uso de servicios`;
+
+    mainPane.innerHTML = html;
+}
+
+function statAgencys(){
+    const html = `Los concesionarios que mas facturan`;
+
+    mainPane.innerHTML = html;
+}
+
+function statUnusedReserves(){
+    const html = `Reservas no utilizadas por clientes`;
+
+    mainPane.innerHTML = html;
+}
+
+function statMaintenancePrograms(){
+    const html = `Revisar esto, porque creo que ya está`;
 
     mainPane.innerHTML = html;
 }
