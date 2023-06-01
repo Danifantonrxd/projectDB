@@ -121,12 +121,13 @@ function changeBusinessOptions(option, node){
             businessCheck();
         }break;
     }
+
+    mainPane.scrollTo(0, 0);
 }
 
 function changeDBOptions(option, node){
     const li = document.querySelector("#database li.selected");
     li.classList.remove("selected");
-
     node.classList.add("selected");
     switch(option){
         case 0: {

@@ -320,67 +320,618 @@ function businessCheck(){
 /*----------------------------------------------------*/
 
 function databaseAgencys(){
-    const html = `Concesionarios`;
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Concesionario</h1>
+
+    <div class="form-group">
+        <label>RIF</label>
+        <div class="error-message">Debe ingresar un RIF válido</div>
+        <input type="number" class="form-control" placeholder="Nro RIF">
+    </div>
+
+    <div class="form-group">
+        <label>Razón Social</label>
+        <div class="error-message">Debe ingresar una razon social</div>
+        <input type="text" class="form-control" placeholder="Razon social">
+    </div>
+
+    <div class="form-group">
+        <label for="">Estado</label>
+        <div class="error-message">Debe seleccionar un estado</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">Bolivar</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="">Ciudad</label>
+        <div class="error-message">Debe seleccionar una ciudad</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">Guayana</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="">Encargado</label>
+        <div class="error-message">Debe seleccionar un encargado</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">30001938 Daniel Rodriguez</option>
+                <option value="1">9949295 Orlando Rodriguez</option>
+            </select>
+        </div>
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Concesionario</button>
+    </div>
+</form>
+    `;
 
     mainPane.innerHTML = html;
 }
 
 function databaseChiefs(){
-    const html = `Encargados`;
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Encargado</h1>
+
+    <div class="form-group">
+        <label>Cédula</label>
+        <div class="error-message">Debe ingresar una cédula</div>
+        <input type="number" class="form-control" placeholder="cédula">
+    </div>
+
+    <div class="form-group">
+        <label>Nombre Completo</label>
+        <div class="error-message">Debe ingresar un nombre</div>
+        <input type="text" class="form-control" placeholder="nombre">
+    </div>
+
+    <div class="form-group">
+        <label>Dirección</label>
+        <div class="error-message">Debe ingresar una dirección</div>
+        <input type="text" class="form-control" placeholder="dirección">
+    </div>
+
+    <div class="form-group">
+        <label>Telefono Principal</label>
+        <div class="error-message">Debe ingresar un telefono</div>
+        <input type="text" class="form-control" placeholder="telefono">
+    </div>
+
+    <div class="form-group">
+        <label>Telefono Secundario</label>
+        <div class="error-message">Debe ingresar un telefono</div>
+        <input type="text" class="form-control" placeholder="telefono">
+    </div>
+
+    <div class="form-group">
+        <label>Email</label>
+        <div class="error-message">Debe ingresar un email</div>
+        <input type="text" class="form-control" placeholder="email">
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Encargado</button>
+    </div>
+</form>
+    `;
 
     mainPane.innerHTML = html;
 }
 
 function databaseServices(){
-    const html = `Servicios`;
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Servicio</h1>
+
+    <div class="form-group">
+        <label>Nombre</label>
+        <div class="error-message">Debe ingresar un nombre</div>
+        <div class="error-message">Ese servicio ya existe</div>
+        <input type="text" class="form-control" placeholder="nombre del servicio">
+    </div>
+
+    <div class="form-group">
+        <label>Descripción</label>
+        <div class="error-message">Debe ingresar una descripción</div>
+        <textarea class="form-control" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="">Actividades</label>
+        <div class="error-message">Debe seleccionar una actividad</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">Cambio de aceite</option>
+            </select>
+        </div>
+        <div class="quit-select">Quitar actividad</div>
+        <div class="add-select">Agregar otra actividad</div>
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Servicio</button>
+    </div>
+</form>
+    `;
 
     mainPane.innerHTML = html;
 }
 
 function databaseWorkers(){
-    const html = `Trabajadores`;
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Trabajador</h1>
+
+    <div class="form-group">
+        <label>Cédula</label>
+        <div class="error-message">Debe ingresar una cédula</div>
+        <input type="number" class="form-control" placeholder="cédula">
+    </div>
+
+    <div class="form-group">
+        <label>Nombre Completo</label>
+        <div class="error-message">Debe ingresar un nombre</div>
+        <input type="text" class="form-control" placeholder="nombre">
+    </div>
+
+    <div class="form-group">
+        <label>Dirección</label>
+        <div class="error-message">Debe ingresar una dirección</div>
+        <input type="text" class="form-control" placeholder="dirección">
+    </div>
+
+    <div class="form-group">
+        <label>Telefono Principal</label>
+        <div class="error-message">Debe ingresar un telefono</div>
+        <input type="text" class="form-control" placeholder="telefono">
+    </div>
+
+    <div class="form-group">
+        <label for="">Cargo Ocupado</label>
+        <div class="error-message">Debe seleccionar un cargo</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">LavaCarros Principal</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Sueldo</label>
+        <div class="error-message">Debe ingresar un sueldo</div>
+        <input type="number" class="form-control" placeholder="sueldo">
+    </div>
+
+    <div class="form-group">
+        <label for="">Especializaciones</label>
+        <div class="error-message">Debe seleccionar una especilización</div>
+        <div class="error-message">No puede repetir la especilización</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">Cambio de aceite</option>
+            </select>
+        </div>
+        <div class="quit-select">Quitar especilización</div>
+        <div class="add-select" href="/">Agregar otra especilización</div>
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Trabajador</button>
+    </div>
+</form>
+    `;
 
     mainPane.innerHTML = html;
 }
 
 function databaseOccupations(){
-    const html = `Cargos`;
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Cargo</h1>
+
+    <div class="form-group">
+        <label>Nombre</label>
+        <div class="error-message">Debe ingresar un nombre</div>
+        <div class="error-message">Ese cargo ya existe</div>
+        <input type="text" class="form-control" placeholder="nombre del cargo">
+    </div>
+
+    <div class="form-group">
+        <label>Descripción</label>
+        <div class="error-message">Debe ingresar una descripción</div>
+        <textarea class="form-control" rows="3"></textarea>
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Cargo</button>
+    </div>
+</form>
+    `;
 
     mainPane.innerHTML = html;
 }
 
 function databaseSpecializations(){
-    const html = `Especializaciones`;
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Especialización</h1>
+
+    <div class="form-group">
+        <label>Nombre</label>
+        <div class="error-message">Debe ingresar un nombre</div>
+        <div class="error-message">Esa especialización ya existe</div>
+        <input type="text" class="form-control" placeholder="nombre de la especialización">
+    </div>
+
+    <div class="form-group">
+        <label>Descripción</label>
+        <div class="error-message">Debe ingresar una descripción</div>
+        <textarea class="form-control" rows="3"></textarea>
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Especialización</button>
+    </div>
+</form>
+    `;
 
     mainPane.innerHTML = html;
 }
 
 function databaseModels(){
-    const html = `Modelos`;
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Modelo de Vehiculo</h1>
+
+    <div class="form-group">
+        <label>Nombre</label>
+        <div class="error-message">Debe ingresar un nombre</div>
+        <input type="text" class="form-control" placeholder="nombre">
+    </div>
+
+    <div class="form-group">
+        <label>Descripción</label>
+        <textarea class="form-control" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Cantidad de puestos</label>
+        <div class="error-message">Debe ingresar una cantidad</div>
+        <input type="number" class="form-control" placeholder="cantidad">
+    </div>
+
+    <div class="form-group">
+        <label>Peso en Kg</label>
+        <div class="error-message">Debe ingresar un peso</div>
+        <input type="number" class="form-control" placeholder="peso">
+    </div>
+
+    <div class="form-group">
+        <label for="">Tipo de aceite</label>
+        <div class="error-message">Debe seleccionar un tipo</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">Sintetico 4T</option>
+                <option value="2">Semisintetico 2T</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="">Tipo de aceite de la caja</label>
+        <div class="error-message">Debe seleccionar un tipo</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">Sintetico 8T</option>
+                <option value="2">Semisintetico 12T</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="">Tipo de refrigerante</label>
+        <div class="error-message">Debe seleccionar un tipo</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">Con sal</option>
+                <option value="2">Sin sal</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Gasolina Recomendada ( Octanaje )</label>
+        <div class="error-message">Debe ingresar un peso</div>
+        <input type="number" class="form-control" placeholder="Octanaje">
+    </div>
+
+    <div class="form-group">
+        <label for="">Mantenimientos Recomendados</label>
+        <div class="error-message">Debe seleccionar un Mantenimiento</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">Cambio de aceite</option>
+            </select>
+        </div>
+        <div class="quit-select">Quitar Mantenimiento</div>
+        <div class="add-select">Agregar otro Mantenimiento</div>
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Modelo</button>
+    </div>
+</form>
+    `;
 
     mainPane.innerHTML = html;
 }
 
 function databaseRecomendedMaintenances(){
-    const html = `Mantenimientos recomendados`;
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Mantenimiento Recomendado</h1>
+
+    <div class="form-group">
+        <label for="">Modelo</label>
+        <div class="error-message">Debe seleccionar un modelo</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">Camaro</option>
+                <option value="2">Tesla Model S</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="">Servicio</label>
+        <div class="error-message">Debe seleccionar un servicio</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">Cambio de aceite</option>
+                <option value="2">Lavado</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Cada X Kilometraje</label>
+        <div class="error-message">Debe ingresar un color</div>
+        <input type="number" class="form-control" placeholder="kilometraje">
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Mantenimiento</button>
+    </div>
+</form>
+    `;
 
     mainPane.innerHTML = html;
 }
 
 function databaseVehicules(){
-    const html = `Vehiculos`;
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Vehiculo</h1>
+
+    <div class="form-group">
+        <label>Placa</label>
+        <div class="error-message">Debe ingresar una placa valida</div>
+        <input type="text" class="form-control" placeholder="placa">
+    </div>
+
+    <div class="form-group">
+        <label for="">Modelo</label>
+        <div class="error-message">Debe seleccionar un modelo</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">Camaro</option>
+                <option value="2">Tesla Model S</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="">Concesionario Vendedor</label>
+        <div class="error-message">Debe seleccionar un Concesionario</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">RIF: 0912</option>
+                <option value="2">RIF: 1234</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Año del vehiculo</label>
+        <div class="error-message">Debe ingresar un año</div>
+        <input type="number" class="form-control" placeholder="año">
+    </div>
+
+    <div class="form-group">
+        <label>Número Serial</label>
+        <div class="error-message">Debe ingresar un serial</div>
+        <input type="text" class="form-control" placeholder="serial">
+    </div>
+
+    <div class="form-group">
+        <label>Número Motor</label>
+        <div class="error-message">Debe ingresar un numero de motor</div>
+        <input type="text" class="form-control" placeholder="nro motor">
+    </div>
+
+    <div class="form-group">
+        <label>Color del vehiculo</label>
+        <div class="error-message">Debe ingresar un color</div>
+        <input type="text" class="form-control" placeholder="color">
+    </div>
+
+    <div class="form-group">
+        <label>Info extra</label>
+        <textarea class="form-control" rows="3"></textarea>
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Vehiculo</button>
+    </div>
+</form>
+    `;
 
     mainPane.innerHTML = html;
 }
 
 function databaseClients(){
-    const html = `Clientes`;
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Cliente</h1>
+
+    <div class="form-group">
+        <label>Cédula</label>
+        <div class="error-message">Debe ingresar una cédula</div>
+        <input type="number" class="form-control" placeholder="cédula">
+    </div>
+
+    <div class="form-group">
+        <label>Nombre Completo</label>
+        <div class="error-message">Debe ingresar un nombre</div>
+        <input type="text" class="form-control" placeholder="nombre">
+    </div>
+
+    <div class="form-group">
+        <label>Dirección</label>
+        <div class="error-message">Debe ingresar una dirección</div>
+        <input type="text" class="form-control" placeholder="dirección">
+    </div>
+
+    <div class="form-group">
+        <label>Telefono Principal</label>
+        <div class="error-message">Debe ingresar un telefono</div>
+        <input type="text" class="form-control" placeholder="telefono">
+    </div>
+
+    <div class="form-group">
+        <label>Telefono Secundario</label>
+        <div class="error-message">Debe ingresar un telefono</div>
+        <input type="text" class="form-control" placeholder="telefono">
+    </div>
+
+    <div class="form-group">
+        <label>Email</label>
+        <div class="error-message">Debe ingresar un email</div>
+        <input type="text" class="form-control" placeholder="email">
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Cliente</button>
+    </div>
+</form>
+    `;
 
     mainPane.innerHTML = html;
 }
 
 function databaseProducts(){
-    const html = `Productos`;
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Producto</h1>
+
+    <div class="form-group">
+        <label>Nombre</label>
+        <div class="error-message">Debe ingresar un nombre</div>
+        <input type="text" class="form-control" placeholder="nombre">
+    </div>
+
+    <div class="form-group">
+        <label>Descripción</label>
+        <textarea class="form-control" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="">Tipo de producto ( linea de producción )</label>
+        <div class="error-message">Debe seleccionar un tipo</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">Sintetico 4T</option>
+                <option value="2">Semisintetico 2T</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="">¿Es Ecológico? </label>
+        <div class="error-message">Debe seleccionar una opción</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">SI</option>
+                <option value="2">NO</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Precio</label>
+        <div class="error-message">Debe ingresar una cantidad</div>
+        <input type="number" class="form-control" placeholder="precio">
+    </div>
+
+    <div class="form-group">
+        <label for="">Proovedor</label>
+        <div class="error-message">Debe seleccionar un proovedor</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">Sintetico 4T</option>
+                <option value="2">Semisintetico 2T</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Cantidad en Almacen</label>
+        <div class="error-message">Debe ingresar una cantidad</div>
+        <input type="number" class="form-control" placeholder="cantidad">
+    </div>
+
+    <div class="form-group">
+        <label>Cantidad mínima en almacen</label>
+        <div class="error-message">Debe ingresar una cantidad</div>
+        <input type="number" class="form-control" placeholder="cantidad">
+    </div>
+
+    <div class="form-group">
+        <label>Cantidad máxima en almacen</label>
+        <div class="error-message">Debe ingresar una cantidad</div>
+        <input type="number" class="form-control" placeholder="cantidad">
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Producto</button>
+    </div>
+</form>
+    `;
 
     mainPane.innerHTML = html;
 }
@@ -392,13 +943,52 @@ function databaseBanks(){
 }
 
 function databaseCities(){
-    const html = `Ciudades`;
+    const html = `
+    <form class="form-sm">
+    <h1>Registrar Ciudad</h1>
+
+    <div class="form-group">
+        <label>Nombre de la ciudad</label>
+        <div class="error-message">Debe ingresar una ciudad</div>
+        <input type="text" class="form-control" placeholder="Nombre">
+    </div>
+
+    <div class="form-group">
+        <label for="">Estado</label>
+        <div class="error-message">Debe seleccionar un estado</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">Bolivar</option>
+            </select>
+        </div>
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Ciudad</button>
+    </div>
+</form>    
+    `;
 
     mainPane.innerHTML = html;
 }
 
 function databaseStates(){
-    const html = `Estados`;
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Estado</h1>
+
+    <div class="form-group">
+        <label>Nombre del estado</label>
+        <div class="error-message">Debe ingresar un estado</div>
+        <input type="text" class="form-control" placeholder="Nombre">
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Estado</button>
+    </div>
+</form>    
+    `;
 
     mainPane.innerHTML = html;
 }
