@@ -85,6 +85,20 @@
                         <li class="database list-group-item">
                             <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
                             <div class="media-body">
+                                <strong>Actividad de Servicio</strong>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class="database list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Servicios Ofrecidos</strong>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class="database list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
+                            <div class="media-body">
                                 <strong>Trabajadores</strong>
                                 <p></p>
                             </div>
@@ -156,6 +170,41 @@
                             <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
                             <div class="media-body">
                                 <strong>Estados</strong>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class="database list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Aceite Motor</strong>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class="database list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Aceite Caja</strong>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class="database list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Refrigerante</strong>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class="database list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Tipo Producto</strong>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class="database list-group-item">
+                            <img class="img-circle media-object pull-left" src="../assets/img/Tanjiro Kamado.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Proveedor</strong>
                                 <p></p>
                             </div>
                         </li>
@@ -384,15 +433,36 @@
                         </div>
                     </form>
 
-                    <form class="form-sm inactive">
+                    <form class="form-sm">
                         <h1>Facturar Servicios</h1>
 
                         <div class="form-group">
                             <label>Orden de Servicio</label>
                             <div class="error-message">Debe ingresar un numero de orden</div>
                             <div class="form-grid">
-                                <input type="search" class="form-control" placeholder="Cédula">
+                                <input type="search" class="form-control" placeholder="orden">
                                 <button type="button" class="btn btn-default btn-form btn-large">Buscar</button>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Productos Utilizados</label>
+                                <div class="error-message">Debe seleccionar una modalidad</div>
+                                <div class="select-service">
+                                    <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 50%;">
+                                        <option value="0">Seleccione ...</option>
+                                        <option value="1">Transferencia</option>
+                                    </select>
+                                    <input type="number" class="form-control" style="width: 49%;" placeholder="cantidad">
+                                </div>
+                                <div class="select-service">
+                                    <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 50%;">
+                                        <option value="0">Seleccione ...</option>
+                                        <option value="1">Transferencia</option>
+                                    </select>
+                                    <input type="number" class="form-control" style="width: 49%;" placeholder="cantidad">
+                                </div>
+                                <div class="quit-select">Quitar Producto</div>
+                                <div class="add-select">Agregar otro Producto</div>
                             </div>
 
                             <div class="group-info">
@@ -509,9 +579,15 @@
                                         <option value="0">Seleccione ...</option>
                                         <option value="1">Transferencia</option>
                                     </select>
-                                    <div class="quit-select">Quitar modalidad</div>
-                                    <div class="add-select">Agregar otra modalidad</div>
                                 </div>
+                                <div class="select-service">
+                                    <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                                        <option value="0">Seleccione ...</option>
+                                        <option value="1">Transferencia</option>
+                                    </select>
+                                </div>
+                                <div class="quit-select">Quitar modalidad</div>
+                                <div class="add-select">Agregar otra modalidad</div>
                             </div>
                         </div>
 
@@ -1035,19 +1111,6 @@
                             <textarea class="form-control" rows="3"></textarea>
                         </div>
 
-                        <div class="form-group">
-                            <label for="">Actividades</label>
-                            <div class="error-message">Debe seleccionar una actividad</div>
-                            <div class="select-service">
-                                <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
-                                    <option value="0">Seleccione ...</option>
-                                    <option value="1">Cambio de aceite</option>
-                                </select>
-                            </div>
-                            <div class="quit-select">Quitar actividad</div>
-                            <div class="add-select">Agregar otra actividad</div>
-                        </div>
-
                         <div>
                             <button type="button" class="btn btn-primary btn-large btn-send">Registrar Servicio</button>
                         </div>
@@ -1098,8 +1161,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="">Proovedor</label>
-                            <div class="error-message">Debe seleccionar un proovedor</div>
+                            <label for="">Proveedor</label>
+                            <div class="error-message">Debe seleccionar un proveedor</div>
                             <div class="select-service">
                                 <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
                                     <option value="0">Seleccione ...</option>
@@ -1129,6 +1192,163 @@
 
                         <div>
                             <button type="button" class="btn btn-primary btn-large btn-send">Registrar Producto</button>
+                        </div>
+                    </form>
+
+                    <form class="form-sm inactive">
+                        <h1>Registrar Banco</h1>
+
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            <div class="error-message">Debe ingresar un banco</div>
+                            <input type="text" class="form-control" placeholder="nombre">
+                        </div>
+
+                        <div>
+                            <button type="button" class="btn btn-primary btn-large btn-send">Registrar Banco</button>
+                        </div>
+                    </form>
+
+                    <form class="form-sm inactive">
+                        <h1>Registrar Aceite Motor</h1>
+
+                        <div class="form-group">
+                            <label>Tipo</label>
+                            <div class="error-message">Debe ingresar un tipo</div>
+                            <input type="text" class="form-control" placeholder="2 tiempos, 4 tiempos, etc.">
+                        </div>
+
+                        <div>
+                            <button type="button" class="btn btn-primary btn-large btn-send">Registrar Tipo</button>
+                        </div>
+                    </form>
+                    
+                    <form class="form-sm inactive">
+                        <h1>Registrar Aceite de Caja</h1>
+
+                        <div class="form-group">
+                            <label>Tipo</label>
+                            <div class="error-message">Debe ingresar un tipo</div>
+                            <input type="text" class="form-control" placeholder="2 tiempos, 4 tiempos, etc.">
+                        </div>
+
+                        <div>
+                            <button type="button" class="btn btn-primary btn-large btn-send">Registrar Tipo</button>
+                        </div>
+                    </form>
+
+                    <form class="form-sm inactive">
+                        <h1>Registrar Regrigerante</h1>
+
+                        <div class="form-group">
+                            <label>Tipo</label>
+                            <div class="error-message">Debe ingresar un tipo</div>
+                            <input type="text" class="form-control" placeholder="Con sal, sin sal, etc.">
+                        </div>
+
+                        <div>
+                            <button type="button" class="btn btn-primary btn-large btn-send">Registrar Tipo</button>
+                        </div>
+                    </form>
+
+                    <form class="form-sm inactive">
+                        <h1>Registrar Tipo de Producto</h1>
+
+                        <div class="form-group">
+                            <label>Tipo</label>
+                            <div class="error-message">Debe ingresar un tipo</div>
+                            <input type="text" class="form-control" placeholder="linea de producción">
+                        </div>
+
+                        <div>
+                            <button type="button" class="btn btn-primary btn-large btn-send">Registrar Tipo</button>
+                        </div>
+                    </form>
+
+                    <form class="form-sm inactive">
+                        <h1>Registrar Proveedor</h1>
+
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            <div class="error-message">Debe ingresar un proveedor</div>
+                            <input type="text" class="form-control" placeholder="DHL, DIESEL, etc.">
+                        </div>
+
+                        <div>
+                            <button type="button" class="btn btn-primary btn-large btn-send">Registrar Proveedor</button>
+                        </div>
+                    </form>
+
+                    <form class="form-sm inactive">
+                        <h1>Registrar Actividad de Servicio</h1>
+
+                        <div class="form-group">
+                            <label for="">Servicio</label>
+                            <div class="error-message">Debe seleccionar un servicio</div>
+                            <div class="select-service">
+                                <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                                    <option value="0">Seleccione ...</option>
+                                    <option value="1">Cambio de aceite</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Descripción</label>
+                            <div class="error-message">Debe ingresar una descripción</div>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+
+                        <div>
+                            <button type="button" class="btn btn-primary btn-large btn-send">Registrar Actividad</button>
+                        </div>
+                    </form>
+
+                    <form class="form-sm inactive">
+                        <h1>Registrar Servicio Ofrecido</h1>
+
+                        <div class="form-group">
+                            <label for="">Servicio</label>
+                            <div class="error-message">Debe seleccionar un servicio</div>
+                            <div class="select-service">
+                                <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                                    <option value="0">Seleccione ...</option>
+                                    <option value="1">Cambio de Aceite</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Costo Hora / Hombre</label>
+                            <div class="error-message">Debe ingresar una ciudad</div>
+                            <input type="number" class="form-control" placeholder="coste">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Coordinador</label>
+                            <div class="error-message">Debe seleccionar un coodinador</div>
+                            <div class="select-service">
+                                <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                                    <option value="0">Seleccione ...</option>
+                                    <option value="1">30012654 Maria Peña</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Tiempo de Espera</label>
+                            <div class="error-message">Debe ingresar un Tiempo</div>
+                            <input type="number" class="form-control" placeholder="Número de dias">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Capacidad</label>
+                            <div class="error-message">Debe ingresar una capacidad</div>
+                            <input type="number" class="form-control" placeholder="Número de vehiculos">
+                        </div>
+
+                        <div>
+                            <button type="button" class="btn btn-primary btn-large btn-send">Registrar Servicio</button>
                         </div>
                     </form>
                 </div>

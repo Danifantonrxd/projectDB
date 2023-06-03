@@ -447,17 +447,89 @@ function databaseServices(){
         <textarea class="form-control" rows="3"></textarea>
     </div>
 
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Servicio</button>
+    </div>
+</form>
+    `;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseServiceActivities(){
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Actividad de Servicio</h1>
+
     <div class="form-group">
-        <label for="">Actividades</label>
-        <div class="error-message">Debe seleccionar una actividad</div>
+        <label for="">Servicio</label>
+        <div class="error-message">Debe seleccionar un servicio</div>
         <div class="select-service">
             <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
                 <option value="0">Seleccione ...</option>
                 <option value="1">Cambio de aceite</option>
             </select>
         </div>
-        <div class="quit-select">Quitar actividad</div>
-        <div class="add-select">Agregar otra actividad</div>
+    </div>
+
+    <div class="form-group">
+        <label>Descripción</label>
+        <div class="error-message">Debe ingresar una descripción</div>
+        <textarea class="form-control" rows="3"></textarea>
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Actividad</button>
+    </div>
+</form>    
+    `;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseServiceOffered(){
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Servicio Ofrecido</h1>
+
+    <div class="form-group">
+        <label for="">Servicio</label>
+        <div class="error-message">Debe seleccionar un servicio</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">Cambio de Aceite</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Costo Hora / Hombre</label>
+        <div class="error-message">Debe ingresar una ciudad</div>
+        <input type="number" class="form-control" placeholder="coste">
+    </div>
+
+    <div class="form-group">
+        <label for="">Coordinador</label>
+        <div class="error-message">Debe seleccionar un coodinador</div>
+        <div class="select-service">
+            <select id="" class="btn btn-large btn-positive btn-dropdown" style="width: 100%;">
+                <option value="0">Seleccione ...</option>
+                <option value="1">30012654 Maria Peña</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Tiempo de Espera</label>
+        <div class="error-message">Debe ingresar un Tiempo</div>
+        <input type="number" class="form-control" placeholder="Número de dias">
+    </div>
+
+    <div class="form-group">
+        <label>Capacidad</label>
+        <div class="error-message">Debe ingresar una capacidad</div>
+        <input type="number" class="form-control" placeholder="Número de vehiculos">
     </div>
 
     <div>
@@ -937,7 +1009,21 @@ function databaseProducts(){
 }
 
 function databaseBanks(){
-    const html = `Bancos`;
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Banco</h1>
+
+    <div class="form-group">
+        <label>Nombre</label>
+        <div class="error-message">Debe ingresar un banco</div>
+        <input type="text" class="form-control" placeholder="nombre">
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Banco</button>
+    </div>
+</form>
+    `;
 
     mainPane.innerHTML = html;
 }
@@ -988,6 +1074,106 @@ function databaseStates(){
         <button type="button" class="btn btn-primary btn-large btn-send">Registrar Estado</button>
     </div>
 </form>    
+    `;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseMotorOil(){
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Aceite Motor</h1>
+
+    <div class="form-group">
+        <label>Tipo</label>
+        <div class="error-message">Debe ingresar un tipo</div>
+        <input type="text" class="form-control" placeholder="2 tiempos, 4 tiempos, etc.">
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Tipo</button>
+    </div>
+</form>
+    `;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseBoxOil(){
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Aceite de Caja</h1>
+
+    <div class="form-group">
+        <label>Tipo</label>
+        <div class="error-message">Debe ingresar un tipo</div>
+        <input type="text" class="form-control" placeholder="2 tiempos, 4 tiempos, etc.">
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Tipo</button>
+    </div>
+</form>
+    `;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseRefrigerant(){
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Refrigerante</h1>
+
+    <div class="form-group">
+        <label>Tipo</label>
+        <div class="error-message">Debe ingresar un tipo</div>
+        <input type="text" class="form-control" placeholder="Con sal, sin sal, etc.">
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Tipo</button>
+    </div>
+</form>
+    `;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseProductType(){
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Tipo de Producto</h1>
+
+    <div class="form-group">
+        <label>Tipo</label>
+        <div class="error-message">Debe ingresar un tipo</div>
+        <input type="text" class="form-control" placeholder="linea de producción">
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Tipo</button>
+    </div>
+</form>
+    `;
+
+    mainPane.innerHTML = html;
+}
+
+function databaseSupplier(){
+    const html = `
+<form class="form-sm">
+    <h1>Registrar Proveedor</h1>
+
+    <div class="form-group">
+        <label>Nombre</label>
+        <div class="error-message">Debe ingresar un proveedor</div>
+        <input type="text" class="form-control" placeholder="DHL, DIESEL, etc.">
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-large btn-send">Registrar Proveedor</button>
+    </div>
+</form>
     `;
 
     mainPane.innerHTML = html;

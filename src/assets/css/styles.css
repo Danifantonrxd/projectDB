@@ -85,6 +85,10 @@
     color: #fba22d;
 }
 
+.select-service {
+    margin-top: 10px;
+}
+
 .error-message {
     font-size: 15px;
     font-weight: bold;

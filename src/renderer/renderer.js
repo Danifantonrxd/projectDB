@@ -149,89 +149,133 @@ function changeDBOptions(option, node){
         }break;
 
         case 3: {
+            console.log("Actividades de Servicios");
+
+            databaseServiceActivities();
+        }break;
+
+        case 4: {
+            console.log("Servicios Ofrecidos");
+
+            databaseServiceOffered();
+        }break;
+
+        case 5: {
             console.log("Trabajadores");
 
             databaseWorkers();
         }break;
 
-        case 4: {
+        case 6: {
             console.log("Cargos");
 
             databaseOccupations();
         }break;
 
-        case 5: {
+        case 7: {
             console.log("Especializaciones");
 
             databaseSpecializations();
         }break;
 
-        case 6: {
+        case 8: {
             console.log("Modelos");
 
             databaseModels();
         }break;
 
-        case 7: {
+        case 9: {
             console.log("Mantenimientos recomendados");
 
             databaseRecomendedMaintenances();
         }break;
 
-        case 8: {
+        case 10: {
             console.log("Vehiculos");
 
             databaseVehicules();
         }break;
 
-        case 9: {
+        case 11: {
             console.log("Clientes");
 
             databaseClients();
         }break;
 
-        case 10: {
+        case 12: {
             console.log("Productos");
 
             databaseProducts();
         }break;
 
-        case 11: {
+        case 13: {
             console.log("Bancos");
 
             databaseBanks();
         }break;
 
-        case 12: {
+        case 14: {
             console.log("Ciudades");
 
             databaseCities();
         }break;
 
-        case 13: {
+        case 15: {
             console.log("Estados");
 
             databaseStates();
         }break;
 
-        case 14: {
+        case 16: {
+            console.log("Tipo Aceite Motor");
+
+            databaseMotorOil();
+        }break;
+
+        case 17: {
+            console.log("Tipo Aceite de Caja");
+
+            databaseBoxOil();
+        }break;
+
+        case 18: {
+            console.log("Tipo Refrigerante");
+
+            databaseRefrigerant();
+        }break;
+
+        case 19: {
+            console.log("Tipo Producto");
+
+            databaseProductType();
+        }break;
+
+        case 20: {
+            console.log("Proveedor");
+
+            databaseSupplier();
+        }break;
+
+        case 21: {
             console.log("Ordenes");
 
             databaseOrders();
         }break;
 
-        case 15: {
+        case 22: {
             console.log("Reservas");
 
             databaseReserves();
         }break;
 
-        case 16: {
+        case 23: {
             console.log("Facturas");
 
             databaseChecks();
         }break;
     }
+
+    mainPane.scrollTo(0, 0);
 }
 
 function changeStatOptions(option, node){
